@@ -18,17 +18,19 @@ const Gallery = () => {
     }
   };
 
-  const handleClick = () => {
-    window.location.href = 'https://www.instagram.com';  // Instagram linkini yerleştirin.
-  }
-
   return (
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
         <SubHeading title=" " />
         <h1 className="headtext__cormorant">Bizi İnstagramdan takip edin!</h1>
         <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Sipariş vermek ve yeni ürünlerimizi görmek için Instagram hesabımızı takip etmeyi unutmayın.</p>
-        <button type="button" className="custom__button stripe" onClick={handleClick}>Instagram</button>
+        <a 
+          href="https://www.instagram.com/fistikezmecim/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+<img src={images.instagramlogo} alt="Instagram logo" className="instagram-logo" />
+        </a>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
@@ -43,7 +45,6 @@ const Gallery = () => {
           <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll('left')} />
           <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />
         </div>
-        
       </div>
     </div>
   );
