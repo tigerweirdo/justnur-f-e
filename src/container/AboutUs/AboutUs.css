@@ -1,0 +1,82 @@
+.app__aboutus {
+    position: relative;
+}
+
+.app__aboutus-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+/*  .app__aboutus-overlay img {
+        
+    z-index: 0;
+    opacity: 0.4; 
+    position:absolute;
+    top: 3rem;
+    left: 19px;
+    
+} 
+ */
+.app__aboutus-content {
+    width: 100%;
+    z-index: 2;
+}
+
+.app__aboutus-content_about {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+.custom-button1{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 140px 5px;
+  transition: background-position 0.5s ease, padding-left 0.5s ease;
+  width: 150px;
+  height: 40px;
+  border: 4px solid #000;
+  font-size: 16px;
+  padding: 1px 7px 1px 7px;
+}
+.custom-button1:hover {
+    transition: background-position 0.5s ease, padding-left 0.5s ease;
+    background-position: 113px 5px;
+    padding-left: 0;
+  }
+
+
+
+
+.app__aboutus-content_about h1{
+    color:var(--color-crimson)
+}
+
+
+.app__aboutus-content_about p {
+    margin: 2rem 0;
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+    
+    .app__aboutus-content_history p {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app__aboutus-content {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .app__aboutus-overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}

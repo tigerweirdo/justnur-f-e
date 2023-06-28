@@ -1,0 +1,91 @@
+/* Footer.css */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  background-color:var(--color-black);
+  padding: 5px;
+ 
+}
+
+.footer__top {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo2{
+  width: 4%;
+}
+
+
+.footer__social-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer__icon {
+  font-size: 24px;
+  color: white;
+}
+
+.footer__icon:hover {
+  color: var(--color-golden);
+}
+
+.p__opensans,
+.p__opensans2 {
+  margin: 10px 0; /* Yukarı ve aşağıda biraz boşluk ekledim. */
+}
+
+
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+ 
+}
+
+.logo-section {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+
+.img {
+  display: flex; /* logo'ya flex özelliğini ekledik */
+  width: 6%;
+}
+.img img{
+  width: 100%;
+}
+
+.footer__copyright-logo  {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+
+@media (max-width: 600px) {
+  .footer__copyright-logo {
+    flex-direction: column; /* Bu, logo ve metni dikey hizalama yapar */
+    justify-content: center; /* Bu, öğeleri yatay olarak merkeze hizalar */
+    text-align: center; /* Bu, metni merkeze hizalar */
+    margin-left: 0; /* Bu, marjı sıfırlar, böylece merkezleme düzgün çalışır */
+  }
+  .logo-section {
+    flex-direction: column; /* Bu, logo ve metni dikey hizalama yapar */
+    align-items: center; /* Bu, öğeleri yatay olarak merkeze hizalar */
+  }
+  .img {
+    display: flex; /* logo'ya flex özelliğini ekledik */
+    width: 12%;}
+}
