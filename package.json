@@ -53,6 +53,6 @@
     "@types/react-dom": "^18.2.5"
   },
   "engines": {
-    "node": "16.x"
+    "node": "20.3.1"
   }
 }
