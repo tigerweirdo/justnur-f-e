@@ -11,6 +11,7 @@ import Logo2 from '../assets/Logo2.png';
 import logo3 from '../assets/logo3.png';
 import Info from '../assets/Info.png';
 import instagramlogo from '../assets/instagramlogo.svg'
+import squirrelwithapeanut from '../assets/squirrelwithapeanut.png'
 
 const images = {
   bg,
@@ -25,7 +26,8 @@ const images = {
   Info,
   Logo2,
   logo3,
-  instagramlogo
+  instagramlogo,
+  squirrelwithapeanut
 };
 
 export default images;

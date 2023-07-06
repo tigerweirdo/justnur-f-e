@@ -1,5 +1,7 @@
   import React from 'react';
   import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+  import { Provider } from 'react-redux';
+import { store } from './redux/index'; 
 
   import { AboutUs, FindUs, Footer, Gallery, Header, Intro, SpecialMenu, Footer2, Spacer } from './container';
   import { Navbar, Animations } from './components';
@@ -22,16 +24,18 @@
   );
 
   const App = () => (
-    <Router>
-      <div className='bg'>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} exact/>
-          <Route path="/products" element={<Products/>} /> 
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <div className='bg'>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} exact/>
+            <Route path="/products" element={<Products/>} /> 
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </Provider>
   );
 
   export default App;
